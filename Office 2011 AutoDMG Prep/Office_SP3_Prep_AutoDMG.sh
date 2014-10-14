@@ -83,7 +83,8 @@ pkgutil --flatten ${TMPDIR} ~/Desktop/My_Office_2011_SP3_installer.pkg
  
 ##Clean the house
 echo "INFO: Deleting the temporary folder"
-rm -rfd '${TMPDIR}/'
+rm -rf ${TMPDIR}
+
 ##
  
 echo "SUCCESS"
