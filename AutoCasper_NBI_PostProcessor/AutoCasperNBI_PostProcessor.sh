@@ -38,6 +38,25 @@ remove_unneccesary_Agents_Daemons(){
 	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.AddressBook.SourceSync.plist"
 	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.AirPlayUIAgent.plist"
 	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.AirPortBaseStationAgent.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.appstoreupdateagent.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.cloudfamilyrestrictionsd-mac.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.DictationIM.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.gamed.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.helpd.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.icloud.fmfd.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.iCloudUserNotifications.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.IMLoggingAgent.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.java.InstallOnDemand.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.java.updateSharing.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.ManagedClientAgent.agent.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.ManagedClientAgent.enrollagent.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.Maps.pushdaemon.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.mdmclient.agent.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.mdmclient.cloudconfig.agent.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.softwareupdate_notify_agent.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.TMHelperAgent.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.TMHelperAgent.SetupOffer.plist"
+	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.VoiceOver.plist"
 	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.bluetoothUIServer.plist"
 	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.CalendarAgent.plist"
 	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.CalendarAgentLauncher.plist"
@@ -59,6 +78,8 @@ remove_unneccesary_Agents_Daemons(){
 	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.speech.synthesisserver.plist"
 	rm -rf "${nbivol}/System/Library/LaunchAgents/com.apple.ubd.plist"
 	echo "*** Removing unneeded LaunchDaemons"
+	rm -rf "${nbivol}/System/Library/LaunchDaemons/com.apple.ManagedClient.startup.plist"
+	rm -rf "${nbivol}/System/Library/LaunchDaemons/com.apple.GameController.gamecontrollerd.plist"
 	rm -rf "${nbivol}/System/Library/LaunchDaemons/com.apple.AirPlayXPCHelper.plist"
 	rm -rf "${nbivol}/System/Library/LaunchDaemons/com.apple.backupd-auto.plist"
 	rm -rf "${nbivol}/System/Library/LaunchDaemons/com.apple.backupd.plist"
@@ -165,8 +186,6 @@ convert_to_sparse(){
 }
 
 fix_NBImageInfo(){
-	echo "*** Converting $nbimageinfo to XML from BINARY"
-	plutil -convert xml1 $nbimageinfo
 	echo "*** Removing incorrect disabled systems from $nbimageinfo"
 	$plistbuddy -c "delete :DisabledSystemIdentifiers" $nbimageinfo
 	$plistbuddy -c "add :DisabledSystemIdentifiers array" $nbimageinfo
