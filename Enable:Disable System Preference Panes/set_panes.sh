@@ -26,8 +26,8 @@ main(){
 useage(){
 		echo "######################################################################################################"
 		echo "#                                                                                                    #"
-		echo "# Useage:- To enable a preference pane: ${script_name} -e com.apple.preferences.mouse             #"
-		echo "#          To disable a preference pane: ${script_name} -d com.apple.preferences.mouse            #"
+		echo "# Useage:- To enable a preference pane: ${script_name} --enable com.apple.preferences.mouse             #"
+		echo "#          To disable a preference pane: ${script_name} --disable com.apple.preferences.mouse            #"
 		echo "#                                                                                                    #"
 		echo "#          To find out the bundle ID of your preference pane run something like this:                #"
 		echo "# grep -A 1 CFBundleIdentifier /System/Library/PreferencePanes/Profiles.prefPane/Contents/Info.plist #" 
