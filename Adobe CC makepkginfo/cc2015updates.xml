@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>admin</string>
+		<key>creation_date</key>
+		<date>2015-09-14T23:00:14Z</date>
+		<key>munki_version</key>
+		<string>2.3.0.2519</string>
+		<key>os_version</key>
+		<string>10.10.5</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.AfterEffects</string>
+			<key>CFBundleName</key>
+			<string>After Effects</string>
+			<key>CFBundleShortVersionString</key>
+			<string>13.5.1</string>
+			<key>CFBundleVersion</key>
+			<string>13.5.1</string>
+			<key>path</key>
+			<string>/Applications/Adobe After Effects CC 2015/Adobe After Effects CC 2015.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.bridge6</string>
+			<key>CFBundleName</key>
+			<string>Adobe Bridge CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>6.1.1.10</string>
+			<key>CFBundleVersion</key>
+			<string>6.1.1.10</string>
+			<key>minosversion</key>
+			<string>10.7</string>
+			<key>path</key>
+			<string>/Applications/Adobe Bridge CC/Adobe Bridge CC.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.Character-Animator.application</string>
+			<key>CFBundleName</key>
+			<string>Character Animator</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.0.0</string>
+			<key>CFBundleVersion</key>
+			<string>1.0.0.650</string>
+			<key>path</key>
+			<string>/Applications/Adobe Character Animator (Preview)/Adobe Character Animator (Preview).app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.dreamweaver-16.0</string>
+			<key>CFBundleName</key>
+			<string>Dreamweaver CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>16.0.1.7714</string>
+			<key>CFBundleVersion</key>
+			<string>16.0.1.7714</string>
+			<key>path</key>
+			<string>/Applications/Adobe Dreamweaver CC 2015/Adobe Dreamweaver CC 2015.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.ExtensionManager</string>
+			<key>CFBundleShortVersionString</key>
+			<string>6.0.8.28</string>
+			<key>CFBundleVersion</key>
+			<string>6.0.8.28</string>
+			<key>path</key>
+			<string>/Applications/Adobe Extension Manager CS6/Adobe Extension Manager CS6.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.macromedia.fireworks</string>
+			<key>CFBundleName</key>
+			<string>Fireworks</string>
+			<key>CFBundleShortVersionString</key>
+			<string>Adobe Fireworks CS6 version 12.0.1.274</string>
+			<key>CFBundleVersion</key>
+			<string>12.0.1</string>
+			<key>path</key>
+			<string>/Applications/Adobe Fireworks CS6/Adobe Fireworks CS6.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleVersion</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.Adobe Flash CC 2015.application</string>
+			<key>CFBundleName</key>
+			<string>Flash CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>15.0.1</string>
+			<key>CFBundleVersion</key>
+			<string>15.0.1.179</string>
+			<key>path</key>
+			<string>/Applications/Adobe Flash CC 2015/Adobe Flash CC 2015.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.illustrator</string>
+			<key>CFBundleName</key>
+			<string>Illustrator CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>19.1.0</string>
+			<key>CFBundleVersion</key>
+			<string>19.1.0</string>
+			<key>minosversion</key>
+			<string>10.4.6</string>
+			<key>path</key>
+			<string>/Applications/Adobe Illustrator CC 2015/Adobe Illustrator.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.InDesign</string>
+			<key>CFBundleName</key>
+			<string>InDesign CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>11.0.0.72</string>
+			<key>CFBundleVersion</key>
+			<string>11000</string>
+			<key>minosversion</key>
+			<string>10.9.0</string>
+			<key>path</key>
+			<string>/Applications/Adobe InDesign CC 2015/Adobe InDesign CC 2015.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.ame.application</string>
+			<key>CFBundleName</key>
+			<string>Media Encoder CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>9.0.2.2</string>
+			<key>CFBundleVersion</key>
+			<string>9.0.2</string>
+			<key>path</key>
+			<string>/Applications/Adobe Media Encoder CC 2015/Adobe Media Encoder CC 2015.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.Photoshop</string>
+			<key>CFBundleName</key>
+			<string>Photoshop CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>16.0.1</string>
+			<key>CFBundleVersion</key>
+			<string>16.0.1.168</string>
+			<key>minosversion</key>
+			<string>10.9.0</string>
+			<key>path</key>
+			<string>/Applications/Adobe Photoshop CC 2015/Adobe Photoshop CC 2015.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.AdobePremierePro</string>
+			<key>CFBundleName</key>
+			<string>Premiere Pro CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>9.0.2</string>
+			<key>CFBundleVersion</key>
+			<string>9.0.2</string>
+			<key>path</key>
+			<string>/Applications/Adobe Premiere Pro CC 2015/Adobe Premiere Pro CC 2015.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>adobe.SpeedGrade</string>
+			<key>CFBundleName</key>
+			<string>SpeedGrade CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>9.0.1</string>
+			<key>CFBundleVersion</key>
+			<string>9.0.1</string>
+			<key>minosversion</key>
+			<string>10.5</string>
+			<key>path</key>
+			<string>/Applications/Adobe SpeedGrade CC 2015/Adobe SpeedGrade CC 2015.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>version</key>
+	<string>1.0.0.0.0 (Please edit me!)</string>
+</dict>
+</plist>

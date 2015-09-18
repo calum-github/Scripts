@@ -1,8 +1,51 @@
 #!/bin/bash
 
-echo "*** Making pkginfo for Adobe CC 2014 ***"
-echo "*** Use this for the installs array ***"
 
+updates2015(){
+makepkginfo \
+-f /Applications/Adobe\ After\ Effects\ CC\ 2015/Adobe\ After\ Effects\ CC\ 2015.app \
+-f /Applications/Adobe\ Bridge\ CC/Adobe\ Bridge\ CC.app \
+-f /Applications/Adobe\ Character\ Animator\ \(Preview\)/Adobe\ Character\ Animator\ \(Preview\).app \
+-f /Applications/Adobe\ Dreamweaver\ CC\ 2015/Adobe\ Dreamweaver\ CC\ 2015.app \
+-f /Applications/Adobe\ Extension\ Manager\ CC/Adobe\ Extension\ Manager\ CC.app \
+-f /Applications/Adobe\ Extension\ Manager\ CS6/Adobe\ Extension\ Manager\ CS6.app \
+-f /Applications/Adobe\ Fireworks\ CS6/Adobe\ Fireworks\ CS6.app \
+-f /Applications/Adobe\ Flash\ CC\ 2015/Adobe\ Flash\ CC\ 2015.app \
+-f /Applications/Adobe\ Illustrator\ CC\ 2015/Adobe\ Illustrator.app \
+-f /Applications/Adobe\ Media\ Encoder\ CC\ 2015/Adobe\ Media\ Encoder\ CC\ 2015.app \
+-f /Applications/Adobe\ Photoshop\ CC\ 2015/Adobe\ Photoshop\ CC\ 2015.app \
+-f /Applications/Adobe\ Premiere\ Pro\ CC\ 2015/Adobe\ Premiere\ Pro\ CC\ 2015.app \
+-f /Applications/Adobe\ SpeedGrade\ CC\ 2015/Adobe\ SpeedGrade\ CC\ 2015.app \
+> Adobe_Updates_2015.xml
+}
+
+adobe_cc_2015(){
+makepkginfo \
+-f /Applications/Adobe\ Acrobat\ DC/Adobe\ Acrobat.app \
+-f /Applications/Adobe\ After\ Effects\ CC\ 2015/Adobe\ After\ Effects\ CC\ 2015.app \
+-f /Applications/Adobe\ Audition\ CC\ 2015/Adobe\ Audition\ CC\ 2015.app \
+-f /Applications/Adobe\ Bridge\ CC/Adobe\ Bridge\ CC.app \
+-f /Applications/Adobe\ Character\ Animator\ \(Preview\)/Adobe\ Character\ Animator\ \(Preview\).app \
+-f /Applications/Adobe\ Dreamweaver\ CC\ 2015/Adobe\ Dreamweaver\ CC\ 2015.app \
+-f /Applications/Adobe\ Edge\ Animate\ CC\ 2015/Adobe\ Edge\ Animate\ CC\ 2015.app \
+-f /Applications/Adobe\ Extension\ Manager\ CC/Adobe\ Extension\ Manager\ CC.app \
+-f /Applications/Adobe\ Extension\ Manager\ CS6/Adobe\ Extension\ Manager\ CS6.app \
+-f /Applications/Adobe\ Fireworks\ CS6/Adobe\ Fireworks\ CS6.app \
+-f /Applications/Adobe\ Flash\ Builder\ 4.7/Adobe\ Flash\ Builder\ 4.7.app \
+-f /Applications/Adobe\ Flash\ CC\ 2015/Adobe\ Flash\ CC\ 2015.app \
+-f /Applications/Adobe\ Illustrator\ CC\ 2015/Adobe\ Illustrator.app \
+-f /Applications/Adobe\ InDesign\ CC\ 2015/Adobe\ InDesign\ CC\ 2015.app \
+-f /Applications/Adobe\ Media\ Encoder\ CC\ 2015/Adobe\ Media\ Encoder\ CC\ 2015.app \
+-f /Applications/Adobe\ Muse\ CC\ 2015/Adobe\ Muse\ CC\ 2015.app \
+-f /Applications/Adobe\ Photoshop\ CC\ 2015/Adobe\ Photoshop\ CC\ 2015.app \
+-f /Applications/Adobe\ Prelude\ CC\ 2015/Adobe\ Prelude\ CC\ 2015.app \
+-f /Applications/Adobe\ Premiere\ Pro\ CC\ 2015/Adobe\ Premiere\ Pro\ CC\ 2015.app \
+-f /Applications/Adobe\ SpeedGrade\ CC\ 2015/Adobe\ SpeedGrade\ CC\ 2015.app \
+> Adobe_CC_2015.xml
+}
+
+adobe_cc_2014(){
+echo "*** Making pkginfo for Adobe CC 2014 ***"
 makepkginfo \
 -f /Applications/Adobe\ Acrobat\ XI\ Pro/Adobe\ Acrobat\ Pro.app \
 -f /Applications/Adobe\ After\ Effects\ CC\ 2014/Adobe\ After\ Effects\ CC\ 2014.app \
@@ -23,6 +66,42 @@ makepkginfo \
 -f /Applications/Adobe\ Photoshop\ CC\ 2014/Adobe\ Photoshop\ CC\ 2014.app \
 -f /Applications/Adobe\ Prelude\ CC\ 2014/Adobe\ Prelude\ CC\ 2014.app \
 -f /Applications/Adobe\ Premiere\ Pro\ CC\ 2014/Adobe\ Premiere\ Pro\ CC\ 2014.app \
--f /Applications/Adobe\ SpeedGrade\ CC\ 2014/Adobe\ SpeedGrade\ CC\ 2014.app 
+-f /Applications/Adobe\ SpeedGrade\ CC\ 2014/Adobe\ SpeedGrade\ CC\ 2014.app \
+> Adobe_CC_2014.xml
+}
+
+
+
+
+
+echo "=== Please Choose which version of Adobe CC you wish to create an installs array for ==="
+echo ""
+echo "=== Enter: 2014, 2015 or updates2015 (default is 2015)"
+read version
+if [ -z $version ] || [ $version = "2015" ]; then
+    echo "=== Using version 2015 ==="
+    sleep 1
+    echo "=== Making PKGInfo for 2015"
+    sleep 1
+    adobe_cc_2015
+    exit 0
+fi
+if [ $version = "2014" ]; then
+    echo "=== Using version 2014 ==="
+    sleep 1
+    echo "=== Making PKGinfo for 2014 ==="
+    sleep 1
+    adobe_cc_2014
+    exit 0
+fi
+if [ $version = "updates2015" ]; then
+    echo "=== Using 'updates 2015' ==="
+    sleep 1
+    echo "=== Making PKGinfo for Update Packages ==="
+    sleep 1
+    updates2015
+    exit 0
+fi
+
 
 exit 0
