@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>_metadata</key>
+	<dict>
+		<key>created_by</key>
+		<string>dma</string>
+		<key>creation_date</key>
+		<date>2017-03-01T00:48:50Z</date>
+		<key>munki_version</key>
+		<string>2.8.2.2855</string>
+		<key>os_version</key>
+		<string>10.12.2</string>
+	</dict>
+	<key>autoremove</key>
+	<false/>
+	<key>catalogs</key>
+	<array>
+		<string>testing</string>
+	</array>
+	<key>installs</key>
+	<array>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.Acrobat.Pro</string>
+			<key>CFBundleName</key>
+			<string>Acrobat Pro</string>
+			<key>CFBundleShortVersionString</key>
+			<string>15.020.20039</string>
+			<key>CFBundleVersion</key>
+			<string>15.020.20039</string>
+			<key>minosversion</key>
+			<string>10 . 4 . 3</string>
+			<key>path</key>
+			<string>/Applications/Adobe Acrobat DC/Adobe Acrobat.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.AfterEffects</string>
+			<key>CFBundleName</key>
+			<string>After Effects</string>
+			<key>CFBundleShortVersionString</key>
+			<string>14.0.1</string>
+			<key>CFBundleVersion</key>
+			<string>14.0.1</string>
+			<key>path</key>
+			<string>/Applications/Adobe After Effects CC 2017/Adobe After Effects CC 2017.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.Adobe Animate CC 2017.application</string>
+			<key>CFBundleName</key>
+			<string>Animate CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>16.0.0</string>
+			<key>CFBundleVersion</key>
+			<string>16.0.0.112</string>
+			<key>path</key>
+			<string>/Applications/Adobe Animate CC 2017/Adobe Animate CC 2017.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.Audition</string>
+			<key>CFBundleName</key>
+			<string>Adobe Audition CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>10.0.1</string>
+			<key>CFBundleVersion</key>
+			<string>10.0.1.8</string>
+			<key>minosversion</key>
+			<string>10.10</string>
+			<key>path</key>
+			<string>/Applications/Adobe Audition CC 2017/Adobe Audition CC 2017.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.bridge7</string>
+			<key>CFBundleName</key>
+			<string>Adobe Bridge CC 2017</string>
+			<key>CFBundleShortVersionString</key>
+			<string>7.0.0.93</string>
+			<key>CFBundleVersion</key>
+			<string>7.0.0.93</string>
+			<key>minosversion</key>
+			<string>10.10</string>
+			<key>path</key>
+			<string>/Applications/Adobe Bridge CC 2017/Adobe Bridge CC 2017.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.dreamweaver-17.0</string>
+			<key>CFBundleName</key>
+			<string>Dreamweaver CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>17.0.0.9315</string>
+			<key>CFBundleVersion</key>
+			<string>17.0.0.9315</string>
+			<key>path</key>
+			<string>/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.ExtensionManager</string>
+			<key>CFBundleShortVersionString</key>
+			<string>7.3.2.39</string>
+			<key>CFBundleVersion</key>
+			<string>7.3.2.39</string>
+			<key>path</key>
+			<string>/Applications/Adobe Extension Manager CC/Adobe Extension Manager CC.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.illustrator</string>
+			<key>CFBundleName</key>
+			<string>Illustrator CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>21.0.0</string>
+			<key>CFBundleVersion</key>
+			<string>21.0.0</string>
+			<key>minosversion</key>
+			<string>10.4.6</string>
+			<key>path</key>
+			<string>/Applications/Adobe Illustrator CC 2017/Adobe Illustrator.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.InCopy</string>
+			<key>CFBundleName</key>
+			<string>InCopy CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>12.0.0.81</string>
+			<key>CFBundleVersion</key>
+			<string>12000</string>
+			<key>minosversion</key>
+			<string>10.10.0</string>
+			<key>path</key>
+			<string>/Applications/Adobe InCopy CC 2017/Adobe InCopy CC 2017.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.InDesign</string>
+			<key>CFBundleName</key>
+			<string>InDesign CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>12.0.0.81</string>
+			<key>CFBundleVersion</key>
+			<string>12000</string>
+			<key>minosversion</key>
+			<string>10.10.0</string>
+			<key>path</key>
+			<string>/Applications/Adobe InDesign CC 2017/Adobe InDesign CC 2017.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.Lightroom6</string>
+			<key>CFBundleShortVersionString</key>
+			<string>Adobe Lightroom [1090788]</string>
+			<key>CFBundleVersion</key>
+			<string>6.7</string>
+			<key>minosversion</key>
+			<string>10.9</string>
+			<key>path</key>
+			<string>/Applications/Adobe Lightroom/Adobe Lightroom.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleVersion</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.ame.application.CC10</string>
+			<key>CFBundleName</key>
+			<string>Media Encoder CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>11.0.0.131</string>
+			<key>CFBundleVersion</key>
+			<string>11.0.0</string>
+			<key>path</key>
+			<string>/Applications/Adobe Media Encoder CC 2017/Adobe Media Encoder CC 2017.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.Muse.application</string>
+			<key>CFBundleName</key>
+			<string>Adobe Muse CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>2017.0.0</string>
+			<key>CFBundleVersion</key>
+			<string>2017.0.0.149</string>
+			<key>path</key>
+			<string>/Applications/Adobe Muse CC 2017/Adobe Muse CC 2017.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.Photoshop</string>
+			<key>CFBundleName</key>
+			<string>Photoshop CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>18.0.0</string>
+			<key>CFBundleVersion</key>
+			<string>18.0.0.53</string>
+			<key>minosversion</key>
+			<string>10.9.0</string>
+			<key>path</key>
+			<string>/Applications/Adobe Photoshop CC 2017/Adobe Photoshop CC 2017.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.Prelude.CC6</string>
+			<key>CFBundleName</key>
+			<string>Prelude CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>6.0.1</string>
+			<key>CFBundleVersion</key>
+			<string>6.0.1</string>
+			<key>path</key>
+			<string>/Applications/Adobe Prelude CC 2017/Adobe Prelude CC 2017.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.PremierePro.CC11</string>
+			<key>CFBundleName</key>
+			<string>Premiere Pro CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>11.0.1</string>
+			<key>CFBundleVersion</key>
+			<string>11.0.1</string>
+			<key>path</key>
+			<string>/Applications/Adobe Premiere Pro CC 2017/Adobe Premiere Pro CC 2017.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>adobe.SpeedGrade</string>
+			<key>CFBundleName</key>
+			<string>SpeedGrade CC</string>
+			<key>CFBundleShortVersionString</key>
+			<string>9.1.0</string>
+			<key>CFBundleVersion</key>
+			<string>9.1.0</string>
+			<key>minosversion</key>
+			<string>10.5</string>
+			<key>path</key>
+			<string>/Applications/Adobe SpeedGrade CC 2015/Adobe SpeedGrade CC 2015.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.adobe.Scout.application</string>
+			<key>CFBundleName</key>
+			<string>Scout</string>
+			<key>CFBundleShortVersionString</key>
+			<string>1.1.3</string>
+			<key>CFBundleVersion</key>
+			<string>1.1.3.354121</string>
+			<key>path</key>
+			<string>/Applications/Adobe Scout CC.app</string>
+			<key>type</key>
+			<string>application</string>
+			<key>version_comparison_key</key>
+			<string>CFBundleShortVersionString</string>
+		</dict>
+	</array>
+	<key>version</key>
+	<string>1.0.0.0.0 (Please edit me!)</string>
+</dict>
+</plist>
+

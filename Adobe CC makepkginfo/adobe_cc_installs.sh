@@ -1,6 +1,30 @@
 #!/bin/bash
 
 
+adobe_cc_2017(){
+makepkginfo \
+-f /Applications/Adobe\ Acrobat\ DC/Adobe\ Acrobat.app \
+-f /Applications/Adobe\ After\ Effects\ CC\ 2017/Adobe\ After\ Effects\ CC\ 2017.app \
+-f /Applications/Adobe\ Animate\ CC\ 2017/Adobe\ Animate\ CC\ 2017.app \
+-f /Applications/Adobe\ Audition\ CC\ 2017/Adobe\ Audition\ CC\ 2017.app \
+-f /Applications/Adobe\ Bridge\ CC\ 2017/Adobe\ Bridge\ CC\ 2017.app \
+-f /Applications/Adobe\ Dreamweaver\ CC\ 2017/Adobe\ Dreamweaver\ CC\ 2017.app \
+-f /Applications/Adobe\ Extension\ Manager\ CC/Adobe\ Extension\ Manager\ CC.app \
+-f /Applications/Adobe\ Illustrator\ CC\ 2017/Adobe\ Illustrator.app \
+-f /Applications/Adobe\ InCopy\ CC\ 2017/Adobe\ InCopy\ CC\ 2017.app \
+-f /Applications/Adobe\ InDesign\ CC\ 2017/Adobe\ InDesign\ CC\ 2017.app \
+-f /Applications/Adobe\ Lightroom/Adobe\ Lightroom.app \
+-f /Applications/Adobe\ Media\ Encoder\ CC\ 2017/Adobe\ Media\ Encoder\ CC\ 2017.app \
+-f /Applications/Adobe\ Muse\ CC\ 2017/Adobe\ Muse\ CC\ 2017.app \
+-f /Applications/Adobe\ Photoshop\ CC\ 2017/Adobe\ Photoshop\ CC\ 2017.app \
+-f /Applications/Adobe\ Prelude\ CC\ 2017/Adobe\ Prelude\ CC\ 2017.app \
+-f /Applications/Adobe\ Premiere\ Pro\ CC\ 2017/Adobe\ Premiere\ Pro\ CC\ 2017.app \
+-f /Applications/Adobe\ SpeedGrade\ CC\ 2015/Adobe\ SpeedGrade\ CC\ 2015.app \
+-f /Applications/Adobe\ Scout\ CC.app \
+> Adobe_CC_2017.xml
+}
+
+
 updates2015(){
 makepkginfo \
 -f /Applications/Adobe\ After\ Effects\ CC\ 2015/Adobe\ After\ Effects\ CC\ 2015.app \
@@ -76,32 +100,45 @@ makepkginfo \
 
 echo "=== Please Choose which version of Adobe CC you wish to create an installs array for ==="
 echo ""
-echo "=== Enter: 2014, 2015 or updates2015 (default is 2015)"
+echo "=== Enter: 2017, 2015, 2014 or updates2015 (default is 2017)"
 read version
-if [ -z $version ] || [ $version = "2015" ]; then
-    echo "=== Using version 2015 ==="
-    sleep 1
-    echo "=== Making PKGInfo for 2015"
-    sleep 1
-    adobe_cc_2015
-    exit 0
-fi
-if [ $version = "2014" ]; then
-    echo "=== Using version 2014 ==="
-    sleep 1
-    echo "=== Making PKGinfo for 2014 ==="
-    sleep 1
-    adobe_cc_2014
-    exit 0
-fi
-if [ $version = "updates2015" ]; then
-    echo "=== Using 'updates 2015' ==="
-    sleep 1
-    echo "=== Making PKGinfo for Update Packages ==="
-    sleep 1
-    updates2015
-    exit 0
-fi
 
+case $version in 
+    2017)
+        echo "=== Using version 2017 ==="
+        sleep 1
+        echo "=== Making PKGinfo for 2017 ==="
+        sleep 1
+        adobe_cc_2017
+        exit 0 ;;
+    2015)
+        echo "=== Using version 2015 ==="
+        sleep 1
+        echo "=== Making PKGInfo for 2015"
+        sleep 1
+        adobe_cc_2015
+        exit 0 ;;
+    updates2015)
+        echo "=== Using 'updates 2015' ==="
+        sleep 1
+        echo "=== Making PKGinfo for Update Packages ==="
+        sleep 1
+        updates2015
+        exit 0 ;;
+    2014)
+        echo "=== Using version 2014 ==="
+        sleep 1
+        echo "=== Making PKGinfo for 2014 ==="
+        sleep 1
+        adobe_cc_2014
+        exit 0 ;;
+    *)
+        echo "=== Using version 2017 ==="
+        sleep 1
+        echo "=== Making PKGinfo for 2017 ==="
+        sleep 1
+        adobe_cc_2017
+        exit 0 ;;
+esac
 
 exit 0
